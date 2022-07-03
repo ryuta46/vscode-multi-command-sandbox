@@ -1,0 +1,16 @@
+{
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.showFileContent",
+            "sequence": [
+                {   
+                    "command": "command-runner.run",
+                    "args": {
+                        "command": "cat output.txt",
+                        "terminal": "runCommand"
+                    }
+                }
+            ]
+        }
+    ]
+}

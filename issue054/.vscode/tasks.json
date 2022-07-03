@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "write_file_with_delay",
+            "type": "shell",
+            "command": "python test.py"
+        },
+    ]
+}
