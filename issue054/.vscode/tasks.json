@@ -4,7 +4,13 @@
         {
             "label": "write_file_with_delay",
             "type": "shell",
-            "command": "python test.py"
+            "command": "python test.py",
         },
+        {
+            "label": "execute_command_after_write_file_with_delay",
+            "command": "${command:multiCommand.showFileContent}",
+            "dependsOrder": "sequence",
+            "dependsOn": ["write_file_with_delay"]
+        }
     ]
 }
