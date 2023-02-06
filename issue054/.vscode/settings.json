@@ -1,16 +1,14 @@
 {
-    "multiCommand.commands": [
+    "multiCommand.commands": 
         {
-            "command": "multiCommand.showFileContent",
-            "sequence": [
-                {   
-                    "command": "command-runner.run",
-                    "args": {
-                        "command": "cat output.txt",
-                        "terminal": "runCommand"
-                    }
-                }
-            ]
+            "multiCommand.splitRightOpenFile": {
+                "sequence": [
+                    "workbench.action.newGroupRight",
+                    "workbench.action.navigateLeft",
+                    "workbench.action.navigateRight",
+                    "workbench.action.quickOpen"
+                ]
+            }            
         }
-    ]
+   
 }
